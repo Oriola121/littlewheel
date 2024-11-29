@@ -9,10 +9,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        spotlight: "url('/uploads/spotlight.png')",
+        imagecard: "url('/uploads/imagecard.jpeg')",
+      },
       colors: {
-        clipPath: {
-          radial: "circle(50% at 50% 50%)",
-        },
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
