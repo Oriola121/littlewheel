@@ -12,6 +12,7 @@ const config: Config = {
       backgroundImage: {
         spotlight: "url('/uploads/spotlight.png')",
         imagecard: "url('/uploads/imagecard.jpeg')",
+        vector: "url('/uploads/vector.svg')",
       },
       colors: {
         background: "hsl(var(--background))",
