@@ -55,7 +55,7 @@ export default function Page() {
       <LandingSection1 />
 
       {isNavOpen && (
-        <nav className="md:hidden absolute top-16 right-0 w-2/5 h-1/2 bg-primary/80 flex flex-col items-center justify-center shadow-xl rounded-lg">
+        <nav className="md:hidden absolute top-16 right-0 w-2/5 h-1/2 bg-primary/90 flex flex-col items-center justify-center shadow-2xl rounded-lg z-50">
           {navigationList.map((nav) => (
             <a key={nav.id} href={nav.link} className="hover:font-bold my-2">
               {nav.title}

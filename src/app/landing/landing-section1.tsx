@@ -5,19 +5,30 @@ import { PiCalendarBlank } from "react-icons/pi";
 export default function LandingSection1() {
   return (
     <ScrollArea className="h-[88.6%]">
-      <div className="bg-spotlight bg-contain bg-no-repeat rounded-3xl h-full text-white flex items-end">
-        <div className="w-full h-3/5 bg-black rounded-b-3xl flex flex-col items-center">
-          <h1 className="text-4xl font-extrabold -mt-28 text-center">
+      <div className="bg-black rounded-3xl h-full text-white flex flex-col relative">
+        <div className="flex justify-center items-start">
+          <Image
+            src="/uploads/spotlight.png"
+            alt=""
+            width={600}
+            height={600}
+            className="w-full max-w-xl object-contain"
+          />
+        </div>
+
+        <div className="w-full flex flex-col items-center z-10 mt-auto p-6">
+          <h1 className="text-3xl md:text-4xl font-extrabold text-center -mt-24">
             Build Financial Freedom
             <br />
             with the Little Wheel
           </h1>
-          <p className="text-xs text-white/80 text-center">
+          <p className="text-xs md:text-sm text-white/80 text-center ">
             Unlock your financial potential with tools and services designed
             <br />
             for every journey and dream.
           </p>
-          <div className="w-[85%] h-[85%] bg-imagecard bg-cover rounded-3xl my-4 flex flex-col justify-between px-8">
+
+          <div className="w-full md:w-[85%] bg-imagecard bg-cover rounded-3xl my-2 flex flex-col space-y-10 justify-between p-4 md:px-8">
             <Image
               src="/uploads/rounded-little.svg"
               alt=""
@@ -25,15 +36,14 @@ export default function LandingSection1() {
               height={30}
             />
 
-            <div className="flex items-end justify-between pb-6">
-              <div className="flex gap-4 p-4 max-w-[40%] rounded-lg bg-white text-black">
+            <div className="flex flex-wrap gap-4 justify-between items-end pb-6">
+              <div className="flex gap-4 p-4 max-w-md rounded-lg bg-white text-black flex-grow">
                 <img
                   src="/uploads/donation-image.jpeg"
                   alt="Donation Campaign"
-                  className="rounded-md"
-                  style={{ aspectRatio: "1/1", width: "30%" }}
+                  className="rounded-md w-1/3 object-cover"
                 />
-                <div className="space-y-1">
+                <div className="space-y-1 flex-grow">
                   <div className="w-1/2 rounded-lg p-3 bg-[#E3EFFC] flex items-center gap-2">
                     <Image
                       src="/uploads/charity.svg"
@@ -55,7 +65,6 @@ export default function LandingSection1() {
                       style={{ width: "21.2%" }}
                     ></div>
                   </div>
-
                   <div className="flex items-center justify-between">
                     <div className="flex items-center">
                       {[
@@ -84,14 +93,13 @@ export default function LandingSection1() {
                 </div>
               </div>
 
-              <div className="w-[30%] flex flex-col space-y-2">
-                <p className="">Personal savings</p>
+              <div className="w-full md:w-[30%] flex flex-col space-y-2">
+                <p className="text-sm md:text-base">Personal savings</p>
                 <div className="flex gap-4 p-4 rounded-lg bg-white text-black">
                   <img
                     src="/uploads/bookdoor.jpeg"
                     alt="Donation Campaign"
-                    className="rounded-md"
-                    style={{ aspectRatio: "1/1", width: "20%" }}
+                    className="rounded-md w-1/4 object-cover"
                   />
                   <div className="space-y-1">
                     <h2 className="text-sm font-semibold">
@@ -113,19 +121,21 @@ export default function LandingSection1() {
           </div>
         </div>
 
-        <div className="absolute right-0 top-1/3 transform -translate-y-1/2">
+        <div className="flex justify-between items-center w-full absolute bottom-1/2 left-0">
+          <Image
+            src="/uploads/w-shaped.svg"
+            alt=""
+            width={65}
+            height={65}
+            className="hidden md:block"
+          />
           <Image
             src="/uploads/boxed-circle.svg"
             alt=""
             width={65}
             height={65}
+            className="hidden md:block"
           />
-        </div>
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-          <Image src="/uploads/w-shaped.svg" alt="" width={65} height={65} />
-        </div>
-        <div className="absolute bottom-0 right-80">
-          <Image src="/uploads/bird.svg" alt="" width={65} height={65} />
         </div>
       </div>
     </ScrollArea>
