@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function LandingSection3() {
   return (
     <div className="h-auto bg-black text-white">
